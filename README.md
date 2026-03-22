@@ -2,6 +2,14 @@
 
 ReadingRuler is a macOS menu bar utility that adds a system-wide reading ruler overlay that follows the cursor.
 
+## Download
+
+Download the latest packaged app from GitHub Releases:
+
+- <https://github.com/coldwaterkimkim/ReadingRuler/releases/latest>
+
+The downloadable app bundle is currently packaged with the display name `울트라돌멩의 밑줄긋기`.
+
 ## Features
 
 - Hold-to-show ruler (global shortcut)
@@ -12,7 +20,7 @@ ReadingRuler is a macOS menu bar utility that adds a system-wide reading ruler o
 - No screen recording, text capture, analytics, or network calls
 - Lightweight runtime path: single overlay window and cursor tracking only while ruler is visible
 
-## Build / Run
+## Run From Source
 
 1. Open `Package.swift` in Xcode (Xcode treats this as a native Swift project).
 2. Choose the `ReadingRuler` scheme.
@@ -22,6 +30,12 @@ You can also build from terminal:
 
 ```bash
 swift build
+```
+
+For a release-style terminal build:
+
+```bash
+swift build -c release
 ```
 
 ## Permissions
