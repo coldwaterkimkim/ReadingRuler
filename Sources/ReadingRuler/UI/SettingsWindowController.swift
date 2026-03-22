@@ -32,7 +32,7 @@ final class SettingsWindowController {
             defer: false
         )
 
-        window.title = "ReadingRuler Settings"
+        window.title = "\(AppLabels.combinedName) Settings"
         window.center()
         window.contentView = NSHostingView(rootView: contentView)
         window.isReleasedWhenClosed = false

@@ -175,7 +175,7 @@ struct SettingsView: View {
                 }
             }
 
-            Text("ReadingRuler does not capture text, record the screen, or send data over the network. It only tracks cursor position and draws overlays.")
+            Text("\(AppLabels.combinedName) does not capture text, record the screen, or send data over the network. It only tracks cursor position and draws overlays.")
                 .font(.footnote)
                 .foregroundStyle(.secondary)
         }

@@ -53,9 +53,9 @@ final class MenuBarController: NSObject {
         statusItem.menu = buildMenu()
 
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: iconName(), accessibilityDescription: "ReadingRuler")
+            button.image = NSImage(systemSymbolName: iconName(), accessibilityDescription: AppLabels.combinedName)
             button.image?.isTemplate = true
-            button.toolTip = "ReadingRuler: \(appState.rulerVisible ? "Ruler On" : "Ruler Off")"
+            button.toolTip = "\(AppLabels.combinedName): \(appState.rulerVisible ? "Ruler On" : "Ruler Off")"
         }
     }
 
@@ -106,7 +106,7 @@ final class MenuBarController: NSObject {
 
         menu.addItem(.separator())
 
-        let quitItem = NSMenuItem(title: "Quit ReadingRuler", action: #selector(quitApp), keyEquivalent: "q")
+        let quitItem = NSMenuItem(title: "Quit \(AppLabels.combinedName)", action: #selector(quitApp), keyEquivalent: "q")
         quitItem.target = self
         menu.addItem(quitItem)
 
